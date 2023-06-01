@@ -1,7 +1,6 @@
 //UV-1 Math.abc
   function abc(x){
-      let num = x*-1
-      return num
+      return x*-1
   }
     abc(-18) //18
 
@@ -13,19 +12,18 @@
 
 //UV-3 Math.trunc
   function trunc(num){
-      let number = num - num % 1
-      return number
+      return num - num % 1
   }
-  trunc(23.7) //23
+    trunc(23.7) //23
 
 //UV-4 Math.floor
   function floor(number){
      let num = number - number % 1;
      let num2 = 0
       if (num > 0){
-          num2 += num;
+         num2 += num;
       } else{
-        num2 += num - 1
+         num2 += num - 1
       }
       return num2
   }
@@ -59,13 +57,7 @@
        round(15.4) //15
 
 //UV-7 Math.sqrt
-       function sqrt(num) {
-        let num2 = num / 2;
-        let number = 0; 
-        while (num2 !== number) {
-            number = num2;
-            num2 = (num2 + num / num2) / 2; 
-        }
-        return num2;
-  }
-        sqrt(25) //5
+        function sqrt(num) {       
+         return num ** 0.5
+    }
+        alert(sqrt(25)) //5
