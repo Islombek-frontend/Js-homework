@@ -29,14 +29,14 @@
       }
       return num2
   }
-    alert(floor(15.8))//-16
+    alert(floor(15.8))//16
 
 //UV-5 Math.ceil
    function ceil(number){
       let num = number - number % 1;
       let num2 = 0
        if (num > 0){
-           num2 += num+1;
+         num2 += num+1;
        } else{
          num2 += num
        }
