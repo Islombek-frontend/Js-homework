@@ -14,7 +14,7 @@
   function trunc(num){
       return num - num % 1
   }
-    trunc(23.7) //23
+  trunc(23.7) //23
 
 //UV-4 Math.floor
   function floor(number){
@@ -56,8 +56,20 @@
   }
        round(15.4) //15
 
-//UV-7 Math.sqrt
-        function sqrt(num) {       
-         return num ** 0.5
-    }
-        alert(sqrt(25)) //5
+// //UV-7 Math.sqrt
+       function sqrt(num) {
+        let num2 = num / 2;
+        let number = 0; 
+        while (num2 !== number) {
+            number = num2;
+            num2 = (num2 + num / num2) / 2; 
+        }
+        return num2;
+  }
+        sqrt(25) //5
+
+
+       function sqrt(num) {       
+           return num ** 0.5
+  }
+        sqrt(25) //5
