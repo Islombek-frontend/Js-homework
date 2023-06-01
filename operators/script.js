@@ -1,4 +1,4 @@
-//Takrorlanadigan sonlar yig'indisi
+//Takrorlanadigan sonlar
  let numbers = [2,3,4,3,3,4,4,5,6,7,7,95,95];
   let arr2 = [];
   for (let i = 0; i < numbers.length; i++) {
