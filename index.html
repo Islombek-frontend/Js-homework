@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <script src="/Arrays/script.js"></script>
+    
+</body>
+<main>
+    <h1>Password Generator</h1>
+    <div class="password">
+        <h4></h4>
+        <img src="/img/fa-regular_copy.svg" alt="">
+    </div>
+    <div class="container">
+            <div class="password_length">
+                <h3 style="color: #E6E5EA;">Character Length</h3>
+                <h5 style="color: #A4FFAF;">10</h5>
+            </div>
+            <input class="range" type="range" min="5" max="25" value="5" step="1">
+            <div class="checkboxs">
+                <div class="box1">
+                    <input class="checkbox" name="box1" type="checkbox" name="checkbox" id="check">
+                    <label for="check">Include Uppercase Letters</label>
+                </div>
+
+                <div class="box2">
+                    <input class="lower" name="box2" type="checkbox" name="checkbox" id="check">
+                    <label for="check">Include Lowercase Letters</label>
+                </div>
+
+                <div class="box3">
+                    <input class="num" name="box3"  type="checkbox" name="checkbox" id="check">
+                    <label for="check">Include Numbers</label>
+                </div>
+
+                <div class="box4">
+                    <input class="sym" name="box4"  type="checkbox" name="checkbox" id="check">
+                    <label for="check">Include Symbols</label>
+                </div>
+            </div>
+            <div class="bars">
+                <p class="strength">Strength</p>
+                <p class="medium">Medium</p>
+                <div class="weak">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <button>GENERATE <img src="img/bx_arrow-to-left.svg" alt=""></button>
+    </div>
+</main>
+    <script src="/code/script.js"></script>
 </body>
 </html>
