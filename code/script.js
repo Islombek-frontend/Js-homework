@@ -297,174 +297,31 @@
 
 
 
-// // let genrate = document.querySelector('.generate')
-// // let upperCase = document.querySelector('.upper')
-// // let box2 = document.querySelector('.box2')
-// // let symbol = document.querySelector('.symbol')
-// // let number = document.querySelector('.number')
-// // let btn = document.querySelector('button')
+let genrate = document.querySelector('.generate')
+let upperCase = document.querySelector('.upper')
+let box2 = document.querySelector('.box2')
+let symbol = document.querySelector('.symbol')
+let number = document.querySelector('.number')
+let btn = document.querySelector('button')
 
-// // let tolowerCase = 'abcdefghijklmnopqrstuvwxyz';
-// // let tupperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-// // let box3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-// // let box4 = ['@', '$', '_', '#'];
+let tolowerCase = 'abcdefghijklmnopqrstuvwxyz';
+let tupperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let box3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+let box4 = ['@', '$', '_', '#'];
 
-// // btn.addEventListener('click', () =>{
-// //     genrate.target.value = Math.floor(Math.random() * tolowerCase.length);
-// // })
+btn.addEventListener('click', () =>{
+    genrate.target.value = Math.floor(Math.random() * tolowerCase.length);
+})
 
 
-// const sliderValue = document.querySelector("sliderValue");
-// const slider = document.querySelector("slider");
-// const rangeInputs = document.querySelectorAll('input[type="range"]');
-// const bar1 = document.querySelector("bar1");
-// const bar2 = document.querySelector("bar2");
-// const bar3 = document.querySelector("bar3");
-// const bar4 = document.querySelector("bar4");
+let sliderValue = document.querySelector("sliderValue");
+let slider = document.querySelector("slider");
+let rangeInputs = document.querySelectorAll('input[type="range"]');
+let bar1 = document.querySelector("bar1");
+let bar2 = document.querySelector("bar2");
+let bar3 = document.querySelector("bar3");
+let bar4 = document.querySelector("bar4");
 
-// // /* slider */
-// // sliderValue.innerHTML = slider.value;
-// // bar1.classList.add("weak");
-// // bar2.classList.add("weak");
-
-// // slider.oninput = function () {
-// //   sliderValue.innerHTML = this.value;
-
-// //   /* Strength */
-
-// //   const levelTxt = document.querySelector("levelTxt");
-
-// //   if (slider.value < 7) {
-// //     levelTxt.innerHTML = "too weak!";
-// //     bar1.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar2.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar3.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar4.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar1.classList.remove("weak");
-// //     bar1.classList.add("tooWeak");
-// //   }
-
-// //   if (slider.value < 9 && slider.value >= 7) {
-// //     levelTxt.innerHTML = "weak";
-// //     bar1.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar2.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar3.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar4.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar1.classList.add("weak");
-// //     bar2.classList.add("weak");
-// //   }
-
-// //   if (slider.value < 11 && slider.value >= 9) {
-// //     levelTxt.innerHTML = "medium";
-// //     bar1.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar2.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar3.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar4.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar1.classList.add("medium");
-// //     bar2.classList.add("medium");
-// //     bar3.classList.add("medium");
-// //   }
-
-// //   if (slider.value >= 11) {
-// //     levelTxt.innerHTML = "strong";
-// //     bar1.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar2.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar3.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar4.classList.remove("tooWeak", "weak", "medium", "strong");
-// //     bar1.classList.add("strong");
-// //     bar2.classList.add("strong");
-// //     bar3.classList.add("strong");
-// //     bar4.classList.add("strong");
-// //   }
-// // };
-
-// // function handleInputChange(e) {
-// //   let target = e.target;
-
-// //   const min = target.min;
-// //   const max = target.max;
-// //   const val = target.value;
-
-// //   target.style.backgroundSize = ((val - min) * 100) / (max - min) + "% 100%";
-// // }
-
-// // rangeInputs.forEach((input) => {
-// //   input.addEventListener("input", handleInputChange);
-// // });
-
-// // /*    Copy to clipboard */
-// // const copyIcon = document.querySelector("copyIcon");
-// // const copyMsg = document.querySelector("copyMsg");
-
-// // copyIcon.addEventListener("click", copyField);
-
-// // function copyField() {
-// //   /* Get the text field */
-// //   var copyText = document.querySelector("h4").innerHTML;
-
-// //   /* Copy the text inside the text field */
-// //   navigator.clipboard.writeText(copyText);
-
-// //   copyMsg.style.display = "initial";
-// // }
-
-// /* Generate Password */
-
-// const button = document.querySelector("button");
-// button.addEventListener("click", () =>{const h4 = document.querySelector("h4");
-
-// function generate(length) {
-//   const uppercase = document.querySelector(".checkbox");
-//   const lowercase = document.querySelector(".lower");
-//   const numbers = document.querySelector(".num");
-//   const symbols = document.querySelector(".sym");
-//   const alert = document.querySelector("alert");
-
-//   if (
-//     uppercase.checked === false &&
-//     lowercase.checked === false &&
-//     numbers.checked === false &&
-//     symbols.checked === false
-//   ) {
-//     alert('Error!!!');
-//   } else {
-//     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
-//     const numbersChars = "0123456789";
-//     const symbolsChars = "@#&?";
-
-//     let chars = "";
-//     var length = h4;
-
-//     if (uppercase.checked === true) {
-//       chars += uppercaseChars;
-//     }
-//     if (lowercase.checked === true) {
-//       chars += lowercaseChars;
-//     }
-//     if (numbers.checked === true) {
-//       chars += numbersChars;
-//     }
-//     if (symbols.checked === true) {
-//       chars += symbolsChars;
-//     }
-
-//     let password = "";
-//     let passwordLength = length;
-//     const array = new Uint32Array(length); // Create 'unsigned' array
-//     window.crypto.getRandomValues(array);
-//     for (let i = 0; i < passwordLength; i++) {
-//       password += chars[array[i] % chars.length]; // % operator returns remainder of division
-//     }
-
-//     h4.innerHTML = password;
-//     h4.style.color = "hsl( var(--clr-almostWhite) )";
-//     copyMsg.style.display = "none";
-//     alert.style.display = "none";
-
-//     return password;
-//   }
-// }})
 
 let range = document.querySelector('.range')
 let h5 = document.querySelector('h5')
